@@ -1,4 +1,4 @@
-import  os
+import os
 import re
 
 file_path = r'/Volumes/share_vd/media/潜伏 (2009) 4K/'
