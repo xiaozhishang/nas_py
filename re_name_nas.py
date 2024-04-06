@@ -3,7 +3,6 @@ import re
 
 file_path = r'/Volumes/share_vd/media/潜伏 (2009) 4K/'
 for root, dirs, files in os.walk(file_path):
-    # filenames.append(files)
     print(files)
 
 for file in files:
