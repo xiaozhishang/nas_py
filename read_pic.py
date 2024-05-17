@@ -4,7 +4,6 @@ import os
 # 检查版本
 print(cv2.__version__)
 
-
 def split_image(image_path):
     # 读取图片
     image = cv2.imread(image_path)
@@ -31,14 +30,8 @@ def save_images(left_image, right_image, output_path_left, output_path_right):
     cv2.imwrite(output_path_right, right_image)
 
 if __name__ == "__main__":
-    # input_image_path = "input_image.jpg"
-    # output_path_left = "left_image.jpg"
-    # output_path_right = "right_image.jpg"
-
-    # left_image, right_image = split_image(input_image_path)
-    # save_images(left_image, right_image, output_path_left, output_path_right)
-
-    file_path = r'/Volumes/share_vd/media/漫画/龙珠 数码全彩 Vol01 双页8K版'
+    # 文件路径
+    file_path = r'/Volumes/share_vd/media/漫画/龙珠 数码全彩 Vol19 双页8K版'
     for root, dirs, files in os.walk(file_path):
         print(files)
 
@@ -54,8 +47,6 @@ if __name__ == "__main__":
             save_images(left_image, right_image, output_path_left, output_path_right)
             os.remove(input_image_path)
 
-
- 
 # # 加载一张图片（确保路径正确）
 # image = cv2.imread('/Users/luxiaojian/Desktop/DB-DFC-01-001-庄子与孙悟空-03.jpg')
  
