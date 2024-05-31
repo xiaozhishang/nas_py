@@ -31,7 +31,7 @@ def save_images(left_image, right_image, output_path_left, output_path_right):
 
 if __name__ == "__main__":
     # 文件路径
-    file_path = r'/Volumes/share_vd/media/漫画/龙珠 数码全彩 Vol19 双页8K版'
+    file_path = r'/Volumes/share_vd/media/漫画/龙珠 数码全彩 Vol43 双页8K版'
     for root, dirs, files in os.walk(file_path):
         print(files)
 
